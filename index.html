@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container w-full flex justify-around">
+      <div class="image_wrapper w-1/2">
+        <img src="./Notes-amico.png" alt="" />
+      </div>
+      <div class="input_container flex items-start mt-8 w-1/2 justify-center">
+        <div class="wrapper w-1/2 flex flex-col gap-4">
+          <h1 class="text-3xl p-1 font-bold">Todo List</h1>
+          <div class="input-wrap flex gap-2">
+            <input
+              type="text"
+              id="task"
+              placeholder="enter task"
+              class="border rounded-lg border-gray-400 w-full p-2 focus:border-gray-500"
+            />
+
+            <button
+              onClick="addTask()"
+              class="p-2 bg-blue-600 border rounded-xl text-zinc-100 cursor-pointer"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+
+          <ul id="taskList">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
